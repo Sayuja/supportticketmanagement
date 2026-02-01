@@ -2,14 +2,14 @@
 
 A RESTful API for managing support tickets built with **Spring Boot 4.0.2**.
 
-## 🚀 Features
+##  Features
 
 - **CRUD Operations** - Create, Read, Update, and Delete support tickets
 - **Swagger UI** - Interactive API documentation
 - **H2 Database** - In-memory database for development
 - **Clean Architecture** - Controller → Service → Repository layers
 
-## 📋 Tech Stack
+##  Tech Stack
 
 - **Java 17**
 - **Spring Boot 4.0.2**
@@ -20,7 +20,7 @@ A RESTful API for managing support tickets built with **Spring Boot 4.0.2**.
 - **JUnit 5 & MockMvc** for testing
 
 
-## 🛠️ Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -46,7 +46,7 @@ The application will start on **http://localhost:8081**
 ./mvnw test
 ```
 
-## 📚 API Documentation
+## API Documentation
 
 ### Swagger UI
 
@@ -94,7 +94,7 @@ Access the interactive API documentation at:
 | `MEDIUM` | Normal priority |
 | `LOW` | Low priority |
 
-## 🧪 Testing
+## Testing
 
 The project includes comprehensive integration tests using MockMvc:
 
@@ -103,7 +103,7 @@ The project includes comprehensive integration tests using MockMvc:
 - **PUT Tests** - Updating existing tickets, creating if not found
 - **DELETE Tests** - Removing tickets
 
-## 📁 H2 Console
+## H2 Console
 
 Access the H2 database console at: http://localhost:8081/h2-console
 
@@ -111,6 +111,4 @@ Access the H2 database console at: http://localhost:8081/h2-console
 - **Username**: `sa`
 - **Password**: (leave empty)
 
-## 📝 License
 
-This project is licensed under the Apache 2.0 License.
