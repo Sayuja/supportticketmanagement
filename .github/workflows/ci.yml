@@ -27,15 +27,15 @@ jobs:
 
       # Build the project
       - name: Build with Maven
-        run: ./mvnw clean compile -B
+        run: mvn clean compile -B
 
       # Run tests
       - name: Run Tests
-        run: ./mvnw test -B
+        run: mvn test -B
 
       # Package the application
       - name: Package Application
-        run: ./mvnw package -DskipTests -B
+        run: mvn package -DskipTests -B
 
       # Upload JAR artifact
       - name: Upload JAR Artifact
@@ -63,7 +63,7 @@ jobs:
 
       # Run checkstyle or other quality checks
       - name: Verify Code Quality
-        run: ./mvnw verify -DskipTests -B
+        run: mvn verify -DskipTests -B
 
   # Build Docker image
   docker:
@@ -84,7 +84,7 @@ jobs:
           cache: maven
 
       - name: Build JAR
-        run: ./mvnw package -DskipTests -B
+        run: mvn package -DskipTests -B
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
